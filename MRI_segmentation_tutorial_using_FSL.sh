@@ -5,10 +5,10 @@ FSL's 'fast' CLI tool can segment MRIs into Gray Matter(GM), White Matter(WM), C
 Fast expects Skullstripped images
 "
 # For brain segmentation using FSL's 'bet':
-bet </path/to/t1.nii.gz> </path/to/t1_skullstripped.nii.gz> -f 0.02 -g 0 -m -B
+bet </path/to/t1.nii.gz> </path/to/t1_skullstripped.nii.gz> -f 0.5 -g 0 -m -B
 "
 '-B' is for bias field correction
--f 0.02 is the threshold by which the skull is stripped
+-f 0.5 is the threshold by which the skull is stripped, smaler value does more stripping
 "
 
 # For segmenting using 'fast':
